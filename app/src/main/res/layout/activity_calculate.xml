@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3C6C6"
+    tools:context=".CalculateActivity">
+
+    <TextView
+        android:id="@+id/totalpaytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="Total Pay:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpaytxt" />
+
+    <TextView
+        android:id="@+id/caculationstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Calculations"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#D61959"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <TextView
+        android:id="@+id/hrswrkdtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="casual"
+        android:text="Hours Worked: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#424242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caculationstxt" />
+
+    <TextView
+        android:id="@+id/paytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:fontFamily="serif-monospace"
+        android:text="Pay:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hrlypaytxt" />
+
+    <TextView
+        android:id="@+id/hrlypaytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="casual"
+        android:text="Hourly Rate: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#424242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hrswrkdtxt" />
+
+    <TextView
+        android:id="@+id/hrsWrkedInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="casual"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#424242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toEndOf="@+id/hrswrkdtxt"
+        app:layout_constraintTop_toBottomOf="@+id/caculationstxt" />
+
+    <TextView
+        android:id="@+id/hrlyPayInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toEndOf="@+id/hrlypaytxt"
+        app:layout_constraintTop_toBottomOf="@+id/hrsWrkedInput" />
+
+    <TextView
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="serif-monospace"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/paytxt"
+        app:layout_constraintTop_toBottomOf="@+id/hrlyPayInput" />
+
+    <TextView
+        android:id="@+id/otpaytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="OT Pay:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paytxt" />
+
+    <TextView
+        android:id="@+id/otPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="serif-monospace"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toEndOf="@+id/otpaytxt"
+        app:layout_constraintTop_toBottomOf="@+id/pay" />
+
+    <TextView
+        android:id="@+id/totalPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif-monospace"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toEndOf="@+id/totalpaytxt"
+        app:layout_constraintTop_toBottomOf="@+id/otPay"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <TextView
+        android:id="@+id/taxtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="Tax:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalpaytxt"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <TextView
+        android:id="@+id/tax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif-monospace"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toEndOf="@+id/taxtxt"
+        app:layout_constraintTop_toBottomOf="@+id/totalPay"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <Button
+        android:id="@+id/bckBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:fontFamily="serif-monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#494949"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taxtxt" />
+
+    <TextView
+        android:id="@+id/percentsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="$"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bckBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toEndOf="@+id/tax"
+        app:layout_constraintTop_toBottomOf="@+id/totalPay"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/dollarsign1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="$"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#424242"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/hrlyPayInput"
+        app:layout_constraintTop_toBottomOf="@+id/hrsWrkedInput"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:id="@+id/dollarsign2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="$"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toEndOf="@+id/totalPay"
+        app:layout_constraintTop_toBottomOf="@+id/hrlyPayInput"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <TextView
+        android:id="@+id/dollarsign3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="$"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toEndOf="@+id/otPay"
+        app:layout_constraintTop_toBottomOf="@+id/pay"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/dollarsign4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="$"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toEndOf="@+id/pay"
+        app:layout_constraintTop_toBottomOf="@+id/hrlyPayInput"
+        app:layout_constraintVertical_bias="0.21" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
